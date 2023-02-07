@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.9 on darwin)" generated="20230207 23:26:09.857" rpa="false" schemaversion="3">
+<suite id="s1" name="Android Oddshub App" source="/Users/iaob/Desktop/workShopODDS/odds-hub/oddsHub-e2e/robot/testscript/android_oddshub_app.robot">
+<test id="s1-t1" name="Oddshub app" line="7">
+<kw name="Open oddshub android application" library="kw_oddshub_android">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName=Pixel 3</arg>
+<arg>app=/Users/iaob/Desktop/workShopODDS/odds-hub/oddsHub-e2e/robot/app/app-release.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230207 23:26:10.231" endtime="20230207 23:26:22.453"/>
+</kw>
+<status status="PASS" starttime="20230207 23:26:10.231" endtime="20230207 23:26:22.454"/>
+</kw>
+<kw name="Wait until the screen shows the message &quot;Course Name: Scrum&quot;" library="kw_oddshub_android" sourcename="Wait until the screen shows the message ${check_lable}">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc=${check_lable}]</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230207 23:26:23.405" level="INFO">xpath criteria: //android.view.View[@content-desc="Course Name: Scrum"]</msg>
+<status status="PASS" starttime="20230207 23:26:22.454" endtime="20230207 23:26:23.405"/>
+</kw>
+<status status="PASS" starttime="20230207 23:26:22.454" endtime="20230207 23:26:23.406"/>
+</kw>
+<status status="PASS" starttime="20230207 23:26:10.230" endtime="20230207 23:26:23.406"/>
+</test>
+<status status="PASS" starttime="20230207 23:26:09.859" endtime="20230207 23:26:23.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Android Oddshub App">Android Oddshub App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
