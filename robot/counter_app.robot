@@ -7,4 +7,4 @@ Resource        counter_app_keywords.robot
 
 Counter app increment counter
     Open the counter app
-    รอจนกว่าจะเจอข้อความ
+    รอจนกว่าจะเจอข้อความ "Course Name: Scrum"

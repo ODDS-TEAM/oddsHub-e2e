@@ -25,5 +25,5 @@ Open The counter app
       ...  printPageSourceOnFindFailure=true
       #...   app=${CURDIR}/../../build/app/outputs/flutter-apk/app-debug.apk
 
-รอจนกว่าจะเจอข้อความ
-    Wait Until Page Contains Element   chain=**/XCUIElementTypeStaticText[`label == "Course Name: Scrum"`]
+รอจนกว่าจะเจอข้อความ ${check_lable}
+    Wait Until Page Contains Element   chain=**/XCUIElementTypeStaticText[`label == ${check_lable}`]
