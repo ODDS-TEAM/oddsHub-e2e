@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.9 on darwin)" generated="20230207 16:21:03.213" rpa="false" schemaversion="3">
+<suite id="s1" name="Counter App" source="/Users/iaob/Desktop/workShopODDS/odds-hub/oddsHub-e2e/robot/counter_app.robot">
+<test id="s1-t1" name="Counter app increment counter" line="10">
+<kw name="Open The counter app" library="counter_app_keywords">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${IOS_PLATFORM_NAME}</arg>
+<arg>deviceName=iPhone 14 Pro</arg>
+<arg>platformVersion=16.2</arg>
+<arg>app=/Users/iaob/Library/Developer/Xcode/DerivedData/Runner-ezopeuiztxanspfyvuytapinvczy/Build/Products/Debug-iphonesimulator/Runner.app</arg>
+<arg>enablePerformanceLogging=true</arg>
+<arg>printPageSourceOnFindFailure=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230207 16:21:03.912" endtime="20230207 16:21:10.999"/>
+</kw>
+<status status="PASS" starttime="20230207 16:21:03.911" endtime="20230207 16:21:10.999"/>
+</kw>
+<kw name="รอจนกว่าจะเจอข้อความ" library="counter_app_keywords">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>chain=**/XCUIElementTypeStaticText[`label == "Course Name: Scrum"`]</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20230207 16:21:11.000" endtime="20230207 16:21:11.582"/>
+</kw>
+<status status="PASS" starttime="20230207 16:21:10.999" endtime="20230207 16:21:11.583"/>
+</kw>
+<status status="PASS" starttime="20230207 16:21:03.911" endtime="20230207 16:21:11.583"/>
+</test>
+<doc>Counter app test suite</doc>
+<status status="PASS" starttime="20230207 16:21:03.214" endtime="20230207 16:21:11.584"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Counter App">Counter App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
