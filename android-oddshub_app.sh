@@ -1,0 +1,1 @@
+robot ./robot/testscript/android_oddshub_app.robot 

@@ -1,0 +1,1 @@
+robot --variable USER_HOME:$HOME  --variable RUNNER_DIR:Runner-bknpogtzfeauxfahyiacpfhnzaaj ./robot/testscript/ios_oddshub_app.robot 

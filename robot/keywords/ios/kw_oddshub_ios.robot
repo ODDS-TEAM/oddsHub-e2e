@@ -9,7 +9,8 @@ Library  Collections
 ${APP}      oddshub.flutter_tests
 ${IOS_AUTOMATION_NAME}    XCUITest
 ${IOS_PLATFORM_NAME}          iOS
-
+${USER_HOME}     /Users/odds-hub
+${RUNNER_DIR}    Runner-bknpogtzfeauxfahyiacpfhnzaaj
 
 *** Keywords ***
 
@@ -18,7 +19,7 @@ Open oddshub ios application
       ...  platformName=${IOS_PLATFORM_NAME}
       ...  deviceName=iPhone 14 Pro
       ...  platformVersion=16.2
-      ...  app=/Users/iaob/Library/Developer/Xcode/DerivedData/Runner-ezopeuiztxanspfyvuytapinvczy/Build/Products/Debug-iphonesimulator/Runner.app
+      ...  app=${USER_HOME}/Library/Developer/Xcode/DerivedData/${RUNNER_DIR}/Build/Products/Debug-iphonesimulator/Runner.app
 
 Wait until the screen shows the message ${check_lable}
     Wait Until Page Contains Element   chain=**/XCUIElementTypeStaticText[`label == ${check_lable}`]
